@@ -1,0 +1,10 @@
+C:\Users\arm00\source\repos\CajeroATM\bin\Debug\CajeroATM.exe.config
+C:\Users\arm00\source\repos\CajeroATM\bin\Debug\CajeroATM.exe
+C:\Users\arm00\source\repos\CajeroATM\bin\Debug\CajeroATM.pdb
+C:\Users\arm00\source\repos\CajeroATM\obj\Debug\CajeroATM.csproj.AssemblyReference.cache
+C:\Users\arm00\source\repos\CajeroATM\obj\Debug\CajeroATM.Form1.resources
+C:\Users\arm00\source\repos\CajeroATM\obj\Debug\CajeroATM.Properties.Resources.resources
+C:\Users\arm00\source\repos\CajeroATM\obj\Debug\CajeroATM.csproj.GenerateResource.cache
+C:\Users\arm00\source\repos\CajeroATM\obj\Debug\CajeroATM.csproj.CoreCompileInputs.cache
+C:\Users\arm00\source\repos\CajeroATM\obj\Debug\CajeroATM.exe
+C:\Users\arm00\source\repos\CajeroATM\obj\Debug\CajeroATM.pdb
