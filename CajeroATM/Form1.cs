@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,7 +35,7 @@ namespace CajeroATM
             // Iniciar el temporizador para mostrar la fecha y hora
             timer1.Start();
         }
-         
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -104,12 +104,12 @@ namespace CajeroATM
             if (tbCta.Text.Length < 8)
             {
                 tbCta.Text = tbCta.Text + "1";
-                if(tbNip.Text.Length < 4)
+                if (tbNip.Text.Length < 4)
                 {
                     tbNip.Text = "";
                 }
             }
-            else if(tbNip.Text.Length < 4)
+            else if (tbNip.Text.Length < 4)
             {
                 tbNip.Text += "1";
             }
@@ -244,7 +244,7 @@ namespace CajeroATM
             else
             {
                 tbNip.Text = tbNip.Text.Substring(0, tbNip.Text.Length - 1);
-            } 
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -254,7 +254,16 @@ namespace CajeroATM
 
         private void enter_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(tbCta.Text) || string.IsNullOrEmpty(tbNip.Text) || (tbNip.Text.Length!=4))//La ultima condición del if considera que el usuario no podrá acceder de manera correcta si el textbox del nip no ha sido llenado con los cuatro digitos requeridos
+            {
+                // Muestra un MessageBox de advertencia si algún campo está vacío
+                MessageBox.Show("Por favor, complete todos los campos antes de guardar.", "Campos Incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                // Muestra un MessageBox de éxito indicando que los datos han sido guardados
+                MessageBox.Show("DATOS ACEPTADOS.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void Date_Click(object sender, EventArgs e)
@@ -279,4 +288,4 @@ namespace CajeroATM
 
         }
     }
-    }
+}
